@@ -13,20 +13,35 @@
     .scrolling-window {
       background-color: black;
       color: white;
-      height: 300px;
+      height: 150px;
+      width: 300px;
+      overflow: hidden;
+    }
+    
+    .scrolling-text {
+      animation: marquee 10s linear infinite;
+    }
+    
+    @keyframes marquee {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
     }
   </style>
 </head>
 <body>
   <div class="scrolling-window">
-    <marquee direction="up" scrollamount="2">
+    <div class="scrolling-text">
       <p>This is the first line of scrolling text.</p>
       <p>This is the second line of scrolling text.</p>
       <p>This is the third line of scrolling text.</p>
       <p>This is the fourth line of scrolling text.</p>
       <p>This is the fifth line of scrolling text.</p>
       <!-- Repeat the lines of text as needed -->
-    </marquee>
+    </div>
   </div>
 </body>
 </html>
