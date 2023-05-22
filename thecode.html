@@ -11,25 +11,22 @@
     }
     
     .scrolling-window {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 300px;
       background-color: black;
       color: white;
-      overflow-y: scroll;
+      height: 300px;
     }
   </style>
 </head>
 <body>
   <div class="scrolling-window">
-    <p>This is the first line of scrolling text.</p>
-    <p>This is the second line of scrolling text.</p>
-    <p>This is the third line of scrolling text.</p>
-    <p>This is the fourth line of scrolling text.</p>
-    <p>This is the fifth line of scrolling text.</p>
-    <!-- Repeat the lines of text as needed -->
+    <marquee direction="up" scrollamount="2">
+      <p>This is the first line of scrolling text.</p>
+      <p>This is the second line of scrolling text.</p>
+      <p>This is the third line of scrolling text.</p>
+      <p>This is the fourth line of scrolling text.</p>
+      <p>This is the fifth line of scrolling text.</p>
+      <!-- Repeat the lines of text as needed -->
+    </marquee>
   </div>
 </body>
 </html>
