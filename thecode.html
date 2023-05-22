@@ -48,16 +48,30 @@
   <div class="container">
     <div class="scrolling-window">
       <div class="scrolling-text">
-        <p>This is the first line of scrolling text.</p>
-        <p>This is the second line of scrolling text.</p>
-        <p>This is the third line of scrolling text.</p>
-        <p>This is the fourth line of scrolling text.</p>
-        <p>This is the fifth line of scrolling text.</p>
+        <p>import instaloader
+L = instaloader.Instaloader()
+
+# Login or load session
+L.login("30minparking", "XXX!")        # (login)
+
+# Obtain profile metadata
+profile = instaloader.Profile.from_username(L.context, "XXX")
+
+# Print list of followees
+follow_list = [] # set empty list to add to
+count=0
+for followee in profile.get_followees():
+    follow_list.append(followee.username) # add the username
+    file = open("x.txt","a+") # open the text file
+    file.write(follow_list[count])
+    file.write("\n")
+    file.close()
+    count=count+1</p>
         <!-- Repeat the lines of text as needed -->
       </div>
     </div>
     <div class="side-text">
-      <h3>Side Text</h3>
+      <h3>main.py</h3>
       <p>This is a python script for obsession. Compile into a list, in reverse chronological order, every Instagram account that your ex-boyfriend follows after he breaks up with you. .</p>
       <!-- Add more text as needed -->
     </div>
