@@ -48,25 +48,25 @@
   <div class="container">
     <div class="scrolling-window">
       <div class="scrolling-text">
-        <p>import instaloader
-L = instaloader.Instaloader()
+        <p>import instaloader<br>
+           L = instaloader.Instaloader()<br><br>
 
-# Login or load session
-L.login("30minparking", "XXX!")        # (login)
+          # Login or load session<br>
+          L.login("30minparking", "XXX!") # (login)<br><br>
 
-# Obtain profile metadata
-profile = instaloader.Profile.from_username(L.context, "XXX")
+          # Obtain profile metadata<br>
+          profile = instaloader.Profile.from_username(L.context, "XXX")<br><br>
 
-# Print list of followees
-follow_list = [] # set empty list to add to
-count=0
-for followee in profile.get_followees():
-    follow_list.append(followee.username) # add the username
-    file = open("x.txt","a+") # open the text file
-    file.write(follow_list[count])
-    file.write("\n")
-    file.close()
-    count=count+1</p>
+          # Print list of followees<br>
+          follow_list = [] # set empty list to add to<br>
+          count=0<br>
+          for followee in profile.get_followees():<br>
+             follow_list.append(followee.username) # add the username<br>
+             file = open("x.txt","a+") # open the text file<br>
+             file.write(follow_list[count])<br>
+             file.write("\n")<br>
+            file.close()<br>
+            count=count+1</p><br><br>
         <!-- Repeat the lines of text as needed -->
       </div>
     </div>
